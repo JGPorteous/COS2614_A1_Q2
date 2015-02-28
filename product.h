@@ -8,11 +8,18 @@
 
 #ifndef PRODUCT_H
 #define PRODUCT_H
+#include <QtCore>
+#include "vendor.h"
 
 class Product
 {
 public:
     Product();
+    Product(QString name, double price);
+    void setSupplier(QString name, QString email, bool isManufacturer);
+    Vendor getManufacturer();
+    QString toString();
+
 };
 
 #endif // PRODUCT_H
