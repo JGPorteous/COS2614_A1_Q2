@@ -1,0 +1,51 @@
+/*
+    Author : Justin Porteous
+    Student : 51565579
+    Assignment 1 Question 2
+    Unique assignment no: 576435
+    GitHub: https://github.com/JGPorteous/COS2614_A1_Q2
+ */
+
+
+
+// First test with Manufacturer = true
+
+
+Welcome to Assignment 1, Question 2 by Justin Porteous
+------------------------------------------------------
+
+Enter Product's' Name: Sweet Berry Jam
+Enter Product's' Price: 12.50
+
+Enter Vendor's Name: Jam Incorporated
+Enter Vendor's Email: jam@jaminc.co.za
+Is the Vendor the Manufacturer [yes/no]: yes
+
+Thank you, the details of the product are:
+Product Name: Sweet Berry Jam, Price: 12.5
+Vendor Name: Jam Incorporated, Vendor Email: jam@jaminc.co.za, Is Manufacturer: Yes
+
+
+
+
+// Second test with Manufacturer = false
+Welcome to Assignment 1, Question 2 by Justin Porteous
+------------------------------------------------------
+
+Enter Product's' Name: Bokkies Biltong
+Enter Product's' Price: 105.35
+
+Enter Vendor's Name: Bakgat Biltong
+Enter Vendor's Email: biltong@bakgat.co.za
+Is the Vendor the Manufacturer [yes/no]: no
+
+Thank you, the details of the product are:
+Product Name: Bokkies Biltong, Price: 105.35
+
+Press <RETURN> to close this window...
+
+
+
+
+
+

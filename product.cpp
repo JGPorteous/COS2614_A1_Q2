@@ -12,7 +12,6 @@
 QString m_Name = "";
 double m_Price = 0;
 Vendor m_Supplier;
-bool supplierDetails = false;
 
 Product::Product()
 {
@@ -22,13 +21,11 @@ Product::Product(QString name, double price)
 {
     m_Name = name;
     m_Price = price;
-
 }
 
 void Product::setSupplier(QString name, QString email, bool isManufacturer)
 {
     m_Supplier.setDetails(name, email, isManufacturer);
-    supplierDetails = true;
 }
 
 QString Product::getManufacturer()
@@ -39,7 +36,8 @@ QString Product::getManufacturer()
 QString Product::toString()
 {
     QString returnValue = "Product Name: " + m_Name + ", Price: " + QString::number(m_Price);
-    if (supplierDetails)
+
+    if (m_Supplier.isManufacturer())
         returnValue += "\n" + m_Supplier.toString();
     return returnValue;
 }

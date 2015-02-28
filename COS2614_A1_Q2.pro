@@ -29,3 +29,6 @@ SOURCES += main.cpp \
 HEADERS += \
     vendor.h \
     product.h
+
+OTHER_FILES += \
+    example_of_output.txt
