@@ -10,23 +10,25 @@
 #include <product.h>
 #include <QTextStream>
 
-QTextStream stdout(stdout);
+QTextStream out(stdout, QIODevice::WriteOnly);
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    Product p("Butter",25);
-    stdout << p.getManufacturer();
-    stdout << p.toString();
 
-    stdout << "\n";
+    Product p("Butter",25);
+
+    out << p.toString();
+
+    out << "\n\n";
 
     Product j("Rasberry Jam",15);
     j.setSupplier("Jam Incorporated","jam@jaminc.co.za",true);
-    stdout << j.getManufacturer();
-    stdout << j.toString();
+    out << j.toString();
 
+    out << "\n\n";
 
-    return a.exec();
+    //return a.exec();
+    return 0;
 }

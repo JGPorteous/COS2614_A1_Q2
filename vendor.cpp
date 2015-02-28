@@ -10,16 +10,16 @@
 #include <QtCore>
 
 
-QString m_Name = "";
-QString m_Email = "";
-bool m_IsManufacturer = false;
+static QString m_Name = "";
+static QString m_Email = "";
+static bool m_IsManufacturer = false;
 
 Vendor::Vendor()
 {
 
 }
 
-void Vendor::SetDetails(QString name, QString email, bool isManufacturer)
+void Vendor::setDetails(QString name, QString email, bool isManufacturer)
 {
     m_Name = name;
     m_Email = email;

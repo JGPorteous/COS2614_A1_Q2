@@ -17,7 +17,7 @@ public:
     Product();
     Product(QString name, double price);
     void setSupplier(QString name, QString email, bool isManufacturer);
-    Vendor getManufacturer();
+    QString getManufacturer();
     QString toString();
 
 };

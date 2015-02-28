@@ -14,7 +14,7 @@ class Vendor
 {
 public:
     Vendor();
-    void SetDetails(QString name, QString email, bool isManufacturer);
+    void setDetails(QString name, QString email, bool isManufacturer);
     bool isManufacturer();
     QString getName();
     QString toString();
